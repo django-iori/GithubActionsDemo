@@ -50,3 +50,4 @@ jobs:
         ssh -oStrictHostKeyChecking=no ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} -i private_key "cd GithubActionsDemo && git pull origin main"
         # 処理を実行
         
+
