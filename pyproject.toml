@@ -10,6 +10,8 @@ python = "^3.11"
 pendulum = "^2.1.2"
 django = "^4.2.5"
 openai = "^0.28.0"
+environ = "^1.0"
+django-environ = "^0.11.2"
 
 
 [build-system]
