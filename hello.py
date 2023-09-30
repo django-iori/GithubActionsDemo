@@ -1,4 +1,4 @@
 from django.views import generic
 
 print("hello")
-print("aaaaaa")
+print("deploy success!!")
