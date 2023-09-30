@@ -50,7 +50,10 @@ jobs:
         ssh -oStrictHostKeyChecking=no ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} -i private_key "cd GithubActionsDemo \
         && git fetch \
         && git merge --no-edit \
+        && poetry env info \
         && poetry shell \
+        && poetry env use 3.11.0 \
+        && poetry env info \
         && poetry install \
         && python manage.py makemigrations \
         && python manage.py migrate \
