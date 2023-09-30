@@ -54,7 +54,7 @@ jobs:
         && poetry install \
         && python manage.py makemigrations \
         && python manage.py migrate \
+        && deactivate \
         && sudo systemctl restart gunicorn"
-        "
         
 
