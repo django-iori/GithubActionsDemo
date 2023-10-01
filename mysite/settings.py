@@ -171,7 +171,7 @@ LOGGING = {
         'django': {
             'level': 'DEBUG',
             'handlers': ['console'],
-            'propagate': False
+            'propagate': True
         }
         # Add any other logger-specific configuration here.
     }
