@@ -133,7 +133,7 @@ STATIC_ROOT = '/usr/share/nginx/html/static'
 MEDIA_ROOT = '/usr/share/nginx/html/media'
 
 # Logginの設定（CloudWatchに出力）
-AWS_REGION_NAME = "us-west-2"
+AWS_REGION_NAME = "ap-northeast-1"
 
 boto3_logs_client = boto3.client("logs", region_name=AWS_REGION_NAME)
 
